@@ -30,7 +30,7 @@ public class AdminLoginServiceImpl implements AdminLoginService{
 		Optional<AdminSignin> opt = adminDao.findByMobileNo(adminLogin.getMobileNo());
 		
 		if(!opt.isPresent()) {
-			throw new LoginException("Enter valid mov=bile Number");
+			throw new LoginException("Enter valid mobile Number");
 		}
 		
 		AdminSignin adminSignin = opt.get();
