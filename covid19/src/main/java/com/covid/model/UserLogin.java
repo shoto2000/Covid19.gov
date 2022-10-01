@@ -1,11 +1,14 @@
 package com.covid.model;
 
-import lombok.AllArgsConstructor;
+import javax.validation.constraints.NotNull;
+
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
 public class UserLogin {
+	@NotNull(message = "Mobile is required")
 	private String mobileNo;
+	
+	@NotNull(message = "Password is required")
 	private String password;
 }

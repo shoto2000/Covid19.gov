@@ -42,5 +42,5 @@ public class LoginLogoutController {
 	@PatchMapping("/adminLogout")
 	public String logoutAdmin(@RequestParam(required = false) String uuid) throws LogoutException {
 		return adminLoginService.logoutAdminAccount(uuid);
-	}
+	} 
 }
